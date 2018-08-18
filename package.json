@@ -1,0 +1,17 @@
+{
+  "name": "guitarworld",
+  "version": "1.0.0",
+  "description": "Guitar world company page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass sass/main.scss css/style.css -w",
+    "server": "live-server --browser=chrome",
+    "start": "npm-run-all --parallel server sass"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
