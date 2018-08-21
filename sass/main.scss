@@ -1,5 +1,2 @@
-$color-red: red;
-
-body {
-    background-color: $color-red;
-}
+@import 'base';
+@import 'header';
