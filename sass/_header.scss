@@ -1,17 +1,45 @@
 .header {
+    height: 70vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, .8),
+        rgba($color-secondary, .8)),
+    url(../images/guitarist.jpg);
+    background-size: cover;
+    border-bottom: 1px solid $color-white-transparent;
+
     &__image {
-        
+        width: 15rem;
+        height: 15rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        cursor: pointer;
     }
 
     &__label {
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__welcome {
-
+        color: $color-white;
+        font-size: 7rem;
+        display: block;
+        margin-bottom: 10rem;
     }
 
     &__button-enter {
-
+        font-family: $font-primary;
+        border: none;
+        width: 25rem;
+        height: 10rem;
+        color: $color-text;
+        background-color: $color-white;
+        border-radius: $button-border-radius;
+        padding: 1rem 3rem;
+        font-size: 2.5rem;
+        cursor: pointer;
+        outline: none;
     }
 }

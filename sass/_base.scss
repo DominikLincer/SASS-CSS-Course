@@ -2,8 +2,12 @@ $color-primary: #0e1111;
 $color-secondary: #353839;
 
 $color-text: #333;
+$color-white: #fff;
+$color-white-transparent: rgba($color-white, .8);
 
 $font-primary: Lato, sans-serif;
+
+$button-border-radius: .5rem;
 
 *,
 *::before,
