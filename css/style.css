@@ -47,4 +47,25 @@ body {
     padding: 1rem 3rem;
     font-size: 2.5rem;
     cursor: pointer;
-    outline: none; }
+    outline: none;
+    transition: all .4s;
+    position: relative; }
+    .header__button-enter:hover {
+      transform: translateY(-0.3rem); }
+      .header__button-enter:hover::after {
+        transform: scaleX(1.2) scaleY(1.3);
+        opacity: 0; }
+    .header__button-enter:active {
+      transform: translateY(0.1rem); }
+    .header__button-enter::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s; }
