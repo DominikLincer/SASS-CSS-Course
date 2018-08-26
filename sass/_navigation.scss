@@ -1,0 +1,78 @@
+.nav {
+    position: fixed;
+    right: 8rem;
+    top: 8rem;
+    height: 3rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover .nav__icon {
+        &,
+        &::before,
+        &::after {
+            background-color: $color-white;
+        }
+
+        &::before {
+            top: -1.2rem;
+        }
+
+        &::after {
+            top: 1.2rem;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        top: 1rem;
+        z-index: 2;
+
+        &,
+        &::before,
+        &::after {
+            width: 4rem;
+            height: .5rem;
+            background-color: $color-white-transparent;
+            display: block;
+            transition: all .2s;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before { top: -1rem; }
+        &::after { top: 1rem; }
+    }
+
+    &__checkbox-label {
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__checkbox:checked + &__checkbox-label &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__checkbox-label &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__checkbox-label &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
