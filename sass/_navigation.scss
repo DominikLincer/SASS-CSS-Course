@@ -75,4 +75,50 @@
         top: 0;
         transform: rotate(-135deg);
     }
+
+    &__checkbox:checked ~ .nav__background {
+        transform: translateY(0);
+    }
+
+    &__background {
+        width: 100vw;
+        height: 100vh;
+        background-color: $color-primary;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        transform: translateY(-100vh);
+        transition: all .5s cubic-bezier(.19,1.02,.96,.86);
+    }
+
+    &__menu {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5rem;
+        color: $color-white-transparent;
+    }
+
+    &__menu-list {
+        list-style: none;
+        text-align: center;
+        line-height: 7rem;
+    }
+
+    &__menu-link {
+        text-decoration: none;
+        display: block;
+        min-width: 25rem;
+        cursor: pointer;
+        color: $color-white;
+        border-radius: $button-border-radius;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-primary;
+            background-color: $color-white;
+        }
+    }
 }
