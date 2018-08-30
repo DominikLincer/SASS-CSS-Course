@@ -16,6 +16,49 @@ body {
   line-height: 1.6;
   background-color: #0e1111; }
 
+.card {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 5rem; }
+  .card__item {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .2s; }
+    .card__item:hover {
+      transform: translateY(0.5rem) scale(1.1);
+      color: #fff; }
+    .card__item--1 {
+      background-color: #414a4c; }
+    .card__item--2 {
+      background-color: #3b444b; }
+    .card__item--3 {
+      background-color: #353839; }
+    .card__item--4 {
+      background-color: #232b2b; }
+  .card__header {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 3rem; }
+  .card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 3rem; }
+  .card__icon {
+    font-size: 10rem;
+    margin-right: 3rem; }
+
 .header {
   height: 70vh;
   background-image: linear-gradient(to right bottom, rgba(14, 17, 17, 0.8), rgba(53, 56, 57, 0.8)), url(../images/guitarist.jpg);
