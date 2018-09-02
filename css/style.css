@@ -196,3 +196,20 @@ body {
     .nav__menu-link:hover {
       color: #0e1111;
       background-color: #fff; }
+
+.products {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0; }
+  .products__container {
+    width: 75%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr); }
+    .products__container div {
+      background-color: goldenrod;
+      border: 3px solid steelblue; }
