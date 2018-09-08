@@ -1,0 +1,40 @@
+.footer {
+    font-size: 2rem;
+    color: $color-white-transparent;
+    display: flex;
+    justify-content: center;
+    background-color: $color-primary-light;
+    border-top: 1px solid $color-white-transparent;
+    padding: 2rem 0;
+
+    :not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-.3rem);
+            color: $color-white;
+
+            &::after {
+                width: 100%;
+                left: 0;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: flex;
+            height: .3rem;
+            width: 0;
+            background-color: $color-white;
+            position: absolute;
+            left: 50%;
+            transition: all .4s;
+        }
+    }
+}

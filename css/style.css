@@ -59,6 +59,36 @@ body {
     font-size: 10rem;
     margin-right: 3rem; }
 
+.footer {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  background-color: #232b2b;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 2rem 0; }
+  .footer :not(:last-child) {
+    margin-right: 3rem; }
+  .footer__item {
+    position: relative;
+    cursor: pointer;
+    transition: all .2s; }
+    .footer__item:hover {
+      transform: translateY(-0.3rem);
+      color: #fff; }
+      .footer__item:hover::after {
+        width: 100%;
+        left: 0; }
+    .footer__item::after {
+      content: "";
+      display: flex;
+      height: .3rem;
+      width: 0;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      transition: all .4s; }
+
 .header {
   height: 70vh;
   background-image: linear-gradient(to right bottom, rgba(14, 17, 17, 0.8), rgba(53, 56, 57, 0.8)), url(../images/guitarist.jpg);
