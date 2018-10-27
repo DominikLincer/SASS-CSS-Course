@@ -5,6 +5,10 @@
     justify-content: center;
     margin: 10rem 0;
 
+    @include responsive(tab-port) {
+        padding: 0 1rem;
+    }
+
     &__container {
         width: 75%;
         height: 100%;
@@ -13,6 +17,10 @@
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(12, 1fr);
         border: .3rem solid $color-white-transparent;
+
+        @include responsive(tab-port) {
+            width: 100%;
+        }
     }
 
     &__image {
@@ -49,6 +57,10 @@
             opacity: 0;
             transition: all .4s;
             transform: translateY(3rem);
+
+            @include responsive(phone) {
+                display: none;
+            }
         }
 
         &--1 {

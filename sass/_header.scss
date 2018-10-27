@@ -8,6 +8,10 @@
     background-size: cover;
     border-bottom: 1px solid $color-white-transparent;
 
+    @include responsive(tab-port) {
+        height: 70rem;
+    }
+
     &__image {
         width: 15rem;
         height: 15rem;
@@ -20,6 +24,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     &__welcome {
@@ -27,6 +34,10 @@
         font-size: 7rem;
         display: block;
         margin-bottom: 10rem;
+
+        @include responsive(phone) {
+            font-size: 5rem;
+        }
     }
 
     &__button-enter {

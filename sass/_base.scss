@@ -4,6 +4,7 @@ $color-secondary: #353839;
 $color-secondary-light: #3b444b;
 $color-accent: #414a4c;
 
+$color-black: black;
 $color-text: #333;
 $color-white: #fff;
 $color-white-transparent: rgba($color-white, .8);
@@ -18,6 +19,11 @@ $button-border-radius: .5rem;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+
+::selection {
+    color: $color-black;
+    background-color: $color-white;
 }
 
 html {
